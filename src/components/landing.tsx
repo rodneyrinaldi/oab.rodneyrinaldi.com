@@ -17,19 +17,13 @@ export const Landing: FunctionComponent = ({ children }) => {
             />
           </div>
           <div>
-            <p>São Paulo</p>
-            <p>2021</p>
+            <h2>2021</h2>
           </div>
         </div>
         <div className="tier">
           <div className="oabtext">
-            <Image
-              src="/images/logotexto.png"
-              alt="oab.rodneyrinaldi"
-              layout="responsive"
-              width={293}
-              height={204}
-            />
+            <h1>TABELA DE HONORÁRIOS</h1>
+            <h1>ADVOGATÍCIOS</h1>
           </div>
           <div className="logo">
             <Image
@@ -43,21 +37,21 @@ export const Landing: FunctionComponent = ({ children }) => {
         </div>
         <div className="tier">
           <div className="button">
-            <Link href="/">
+            <Link href="/home">
               <a>
                 CÍVIL
             </a>
             </Link>
           </div>
           <div className="button">
-            <Link href="/">
+            <Link href="/home">
               <a>
                 PENAL
             </a>
             </Link>
           </div>
           <div className="button">
-            <Link href="/">
+            <Link href="/home">
               <a>
                 OUTROS
             </a>
@@ -71,7 +65,7 @@ export const Landing: FunctionComponent = ({ children }) => {
         .container {
           width: 100vw;
           height: 100vh;
-          padding: 5vh 5vw;
+          padding: 2vh 1vw;
           color: #e6ecf0;
           display: flex;
           flex-direction: column;
@@ -84,9 +78,17 @@ export const Landing: FunctionComponent = ({ children }) => {
           color: #e6ecf0;
           display: flex;
           flex-direction: row;
-          align-items: space-between;
+          align-itens: center;
           justify-content: center;
           flex-wrap: wrap;
+        }   
+        .tier div h2 {
+          widt: 100%;
+          margin: 0;
+          padding: 0;
+          color: #2e1702;
+          font-size:30px;
+          font-weight:600;
         }
 
         .button {
@@ -108,37 +110,30 @@ export const Landing: FunctionComponent = ({ children }) => {
         a {
           text-decoration:none;
           color:#ffffff;
-          
-
-          // width: 100%;
-          // border-radius:4px;
-          // display:inline-block;
-          // cursor:pointer;
-          // color:#ffffff;
-          // background: #c96c15;
-          // font-size:18px;
-          // font-weight:600;
-          // padding:10px 40px;
-          // margin:20px 20px;
-          // text-decoration:none;
-        }
-        
-        p {
-          color: #2e1702;
-          font-size:22px;
-          font-weight:600;
         }
         
         .oabtext {
-          width: 200Px;
+          width: 100%;
+          text-align: center;
+          margin-top:6vh;
+        }        
+        .oabtext h1 {
+          widt: 100%;
+          margin: 0;
+          padding: 0;
+          color: #2e1702;
+          font-size:24px;
+          font-weight:600;
         }
         
         .oablogo {
-          width: 74Px;
+          width: 66px;
+          margin-right: 1rem;
         }
 
         .logo {
           width: 240px;
+          margin: 6vh 0 6vh;
         }
       `}</style>
     </>
