@@ -69,8 +69,7 @@ export const Landing: FunctionComponent = ({ children }) => {
           color: #e6ecf0;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          margin-top: 5vh;
         }
 
         .tier {
