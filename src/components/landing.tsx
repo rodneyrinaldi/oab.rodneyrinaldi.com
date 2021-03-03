@@ -22,12 +22,14 @@ export const Landing: FunctionComponent = ({ children }) => {
           </div>
         </div>
         <div className="tier">
-          <div>
-            <p>Tabela</p>
-            <p>honorários</p>
-            <p>advocatícios</p>
-            <p>Ordem dos</p>
-            <p>Advogados</p>
+          <div className="oabtext">
+            <Image
+              src="/images/logotexto.png"
+              alt="oab.rodneyrinaldi"
+              layout="responsive"
+              width={293}
+              height={204}
+            />
           </div>
           <div className="logo">
             <Image
@@ -40,10 +42,24 @@ export const Landing: FunctionComponent = ({ children }) => {
           </div>
         </div>
         <div className="tier">
-          <div>
+          <div className="button">
             <Link href="/">
               <a>
-                CONSULTAR
+                CÍVIL
+            </a>
+            </Link>
+          </div>
+          <div className="button">
+            <Link href="/">
+              <a>
+                PENAL
+            </a>
+            </Link>
+          </div>
+          <div className="button">
+            <Link href="/">
+              <a>
+                OUTROS
             </a>
             </Link>
           </div>
@@ -55,6 +71,7 @@ export const Landing: FunctionComponent = ({ children }) => {
         .container {
           width: 100vw;
           height: 100vh;
+          padding: 5vh 5vw;
           color: #e6ecf0;
           display: flex;
           flex-direction: column;
@@ -69,30 +86,55 @@ export const Landing: FunctionComponent = ({ children }) => {
           flex-direction: row;
           align-items: space-between;
           justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .button {
+          cursor:pointer;
+          width: 20%;
+          max-width: 100px;
+          display: flex;
+          justify-content: center;
+          border-radius:4px;
+          color:#ffffff;
+          background: #c96c15;
+          margin:0px 5px;
+          padding:4px 14px;
+        }
+        .button:hover {
+          background: #c96c15d9;
         }
 
         a {
-          border-radius:4px;
-          display:inline-block;
-          cursor:pointer;
-          color:#1C1C1C;
-          background: #FFA500;
-          font-size:18px;
-          font-weight:600;
-          padding:10px 40px;
-          margin:20px 20px;
           text-decoration:none;
-        }
-        a a:hover {
-          opacity: 0.8; 
+          color:#ffffff;
+          
+
+          // width: 100%;
+          // border-radius:4px;
+          // display:inline-block;
+          // cursor:pointer;
+          // color:#ffffff;
+          // background: #c96c15;
+          // font-size:18px;
+          // font-weight:600;
+          // padding:10px 40px;
+          // margin:20px 20px;
+          // text-decoration:none;
         }
         
         p {
-          color: black;
+          color: #2e1702;
+          font-size:22px;
+          font-weight:600;
         }
-
+        
+        .oabtext {
+          width: 200Px;
+        }
+        
         .oablogo {
-          width: 90px;
+          width: 74Px;
         }
 
         .logo {
