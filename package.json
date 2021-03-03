@@ -13,6 +13,7 @@
   "author": "@rodneyrinaldi",
   "license": "ISC",
   "dependencies": {
+    "@next/mdx": "^9.3.0",
     "next": "^10.0.7",
     "next-pwa": "^2.3.0",
     "react": "^16.13.0",
