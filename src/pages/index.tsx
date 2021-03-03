@@ -1,5 +1,5 @@
-import { Container } from "../components/Container";
+import { Landing as LandingComp } from "../components/landing";
 
 export default () => (
-  <Container />
+  <LandingComp />
 );

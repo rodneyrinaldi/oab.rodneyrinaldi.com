@@ -1,10 +1,19 @@
 import { FunctionComponent } from "react";
 import Image from 'next/image'
 
-export const Container: FunctionComponent = ({ children }) => {
+export const Home: FunctionComponent = ({ children }) => {
   return (
     <>
       <div className="container">
+        <div className="logo">
+          <Image
+            src="/images/logo.png"
+            alt="oab.rodneyrinaldi"
+            layout="responsive"
+            width={517}
+            height={589}
+          />
+        </div>
         <div className="logo">
           <Image
             src="/images/oab-logo.gif"
