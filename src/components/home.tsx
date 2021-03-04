@@ -1,20 +1,24 @@
 import { FunctionComponent } from "react";
+import Link from 'next/link'
 import Image from 'next/image'
 
+import styles from './home.module.css'
+
+import States from '../utils/states'
+import Areas from '../utils/areas'
+
 export const Home: FunctionComponent = ({ children }) => {
+
+  const stateDM = [
+    { value: "DF", label: "DF" },
+    { value: "SP", label: "SP" },
+  ]
+
   return (
-    <>
-      <div className="container">
-        <div className="logo">
-          <Image
-            src="/images/logo.png"
-            alt="oab.rodneyrinaldi"
-            layout="responsive"
-            width={517}
-            height={589}
-          />
-        </div>
-        <div className="logo">
+    <div className={styles.container}>
+
+      <div className={styles.tier}>
+        <div className={styles.oablogo}>
           <Image
             src="/images/oab-logo.gif"
             alt="oab.rodneyrinaldi"
@@ -23,54 +27,48 @@ export const Home: FunctionComponent = ({ children }) => {
             height={332}
           />
         </div>
-        <p>Tabela de honorários OAB</p>
+        <div>
+          <h2>2021</h2>
+        </div>
+        <div className={styles.rrlogo}>
+          <Image
+            src="/images/rr-logo.png"
+            alt="oab.rodneyrinaldi"
+            layout="responsive"
+            width={460}
+            height={460}
+          />
+        </div>
       </div>
 
-      <style jsx>{`
-        .container {
-          width: 100vw;
-          height: 100vh;
-          color: #e6ecf0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-        p {
-          color: black;
-        }
+      <div className={styles.tier}>
+        <div className={styles.oabtext}>
+          <h1>TABELA DE HONORÁRIOS</h1>
+          <States />
+          <Areas />
+        </div>
+      </div>
 
-        .logo {
-          width: 115px;
-        }
-        
-        .diviframe {
-          width: 100vw;
-          height: 50vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
+      <div className={styles.tier}>
+        <div className={styles.button}>
+          <Link href="#">
+            <a>
+              LIMPAR
+            </a>
+          </Link>
+        </div>
+        <div className={styles.button}>
+          <Link href="#">
+            <a>
+              PESQUISAR
+            </a>
+          </Link>
+        </div>
+      </div>
 
-        .iframe {
-          width: 100vw;
-          height: 50vh;
-        }
+      <div className={styles.tier}>
+      </div>
 
-        .goForward {
-          align-self:center;
-          padding: 8px 14px 6px;
-          color: aliceblue;
-          background: rgb(60, 94, 110);
-          border-radius: 5px;
-          text-decoration: none; 
-          margin-bottom: 20px;
-        }
-        .goForward:hover {
-          background: rgb(88, 128, 146);
-        }
-      `}</style>
-    </>
-  );
-};
+    </div>
+  )
+}

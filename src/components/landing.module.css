@@ -1,0 +1,81 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 2vh 1vw;
+  color: #e6ecf0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.tier {
+  width: 100%;
+  color: #e6ecf0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}   
+.tier div h2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #2e1702;
+  font-size:30px;
+  font-weight:600;
+}
+
+.button {
+  cursor:pointer;
+  width: 20%;
+  height: 1rem;
+  max-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:4px;
+  color:#ffffff;
+  background: #c96c15;
+  margin:0px 5px;
+  padding:14px 14px;
+}
+.button:hover {
+  background: #c96c15d9;
+}
+
+.button a {
+  text-decoration:none;
+  color:#ffffff;
+}
+
+.oabtext {
+  width: 100%;
+  text-align: center;
+  margin-top:6vh;
+}        
+.oabtext h1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #2e1702;
+  font-size:24px;
+  font-weight:600;
+}
+
+.oablogo {
+  width: 60px;
+  padding-top: 4px;
+  margin-right: 2rem;
+}
+
+.rrlogo {
+  width: 36px;
+  padding-top: 4px;
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 240px;
+  margin: 6vh 0 6vh;
+}
