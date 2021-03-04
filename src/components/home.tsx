@@ -9,11 +9,6 @@ import Areas from '../utils/areas'
 
 export const Home: FunctionComponent = ({ children }) => {
 
-  const stateDM = [
-    { value: "DF", label: "DF" },
-    { value: "SP", label: "SP" },
-  ]
-
   return (
     <div className={styles.container}>
 
@@ -42,10 +37,14 @@ export const Home: FunctionComponent = ({ children }) => {
       </div>
 
       <div className={styles.tier}>
+        <h1>TABELA DE HONORÁRIOS</h1>
         <div className={styles.oabtext}>
-          <h1>TABELA DE HONORÁRIOS</h1>
-          <States />
-          <Areas />
+          <div className={styles.states}>
+            <States />
+          </div>
+          <div className={styles.areas}>
+            <Areas />
+          </div>
         </div>
       </div>
 

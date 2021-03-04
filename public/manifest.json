@@ -1,8 +1,8 @@
 {
-  "short_name": "NextPwaPoc",
-  "name": "NextJS PWA",
-  "description": "NextJS app with offline support",
-  "lang": "en-GB",
+  "short_name": "oab.rr",
+  "name": "oab.rodneyrinaldi",
+  "description": "offline support",
+  "lang": "pt-BR",
   "icons": [
     {
       "src": "/images/pwa-144.png",
