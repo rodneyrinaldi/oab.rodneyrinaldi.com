@@ -6,6 +6,7 @@ import styles from './home.module.css'
 
 import States from '../utils/states'
 import Areas from '../utils/areas'
+import Honoraries from '../utils/honoraries'
 
 export const Home: FunctionComponent = ({ children }) => {
 
@@ -45,6 +46,12 @@ export const Home: FunctionComponent = ({ children }) => {
           <div className={styles.areas}>
             <Areas />
           </div>
+        </div>
+      </div>
+
+      <div className={styles.tier}>
+        <div className={styles.honoraries}>
+          <Honoraries />
         </div>
       </div>
 
