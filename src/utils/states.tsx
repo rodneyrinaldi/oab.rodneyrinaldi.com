@@ -1,11 +1,11 @@
 import React, { Component, useContext, useEffect } from 'react'
 import Select from 'react-select'
 
-import { SelectionContext } from '../contexts/selection'
+import { SelectionContext, SelectionProvider } from '../contexts/selection'
 import records from '../data/state.json'
 
 const States = () => {
-  const { state, setState } = useContext(SelectionContext);
+  const { } = useContext(SelectionContext);
 
   const options = records.map(d => ({
     "value": d.UF,
@@ -16,7 +16,7 @@ const States = () => {
   }, []);
 
   const handleStateChange = (obj: any) => {
-    setState(obj);
+    //setState(obj);
   };
 
   return (

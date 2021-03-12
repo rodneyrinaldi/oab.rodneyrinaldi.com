@@ -18,7 +18,7 @@ export function SelectionProvider({ children }) {
     <SelectionContext.Provider value={{
       state: '', setState,
       area: '', setArea,
-      action: null, setAction
+      action: '', setAction
     }}>
       {children}
     </SelectionContext.Provider>
