@@ -8,6 +8,7 @@ import States from '../utils/states'
 import Areas from '../utils/areas'
 import Actions from '../utils/actions'
 import Procedures from '../utils/procedures'
+import Version from './version'
 
 export const Home: FunctionComponent = ({ children }) => {
 
@@ -64,6 +65,7 @@ export const Home: FunctionComponent = ({ children }) => {
       </div>
 
       <div className={styles.tier}>
+        <Version />
       </div>
 
     </div>

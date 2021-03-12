@@ -3,9 +3,9 @@ import metadata from '../../version.json'
 
 function Version() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'black', marginTop: '7vh' }} >
       <div style={{ display: 'flex', lineHeight: '20px' }}>
-        &copy; directweb.com.br 2021
+        adv.rodneyrinaldi.com
       </div>
       <div style={{ display: 'flex', lineHeight: '20px' }}>
         {`version ${metadata.buildMajor}.

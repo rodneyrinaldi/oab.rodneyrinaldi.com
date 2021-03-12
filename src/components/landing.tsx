@@ -2,6 +2,8 @@ import { FunctionComponent } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
 
+import Version from './version'
+
 import styles from './landing.module.css'
 
 export const Landing: FunctionComponent = ({ children }) => {
@@ -56,8 +58,8 @@ export const Landing: FunctionComponent = ({ children }) => {
           </Link>
         </div>
       </div>
-
       <div className={styles.tier}>
+        <Version />
       </div>
     </div>
   )
