@@ -1,18 +1,34 @@
-import React, { Component } from 'react'
+import React, { Component, useContext, useEffect } from 'react'
 import Select from 'react-select'
+
+import { SelectionContext } from '../contexts/selection'
 import records from '../data/state.json'
 
-const options = records.map(d => ({
-  "value": d.UF,
-  "label": d.UF
+const States = () => {
+  const { state, setState } = useContext(SelectionContext);
 
-}))
+  const options = records.map(d => ({
+    "value": d.UF,
+    "label": d.UF
+  }))
 
-const States = () => (
-  <Select
-    options={options}
-    defaultValue={[options[0]]}
-  />
-)
+  useEffect(() => {
+  }, []);
+
+  const handleStateChange = (obj: any) => {
+    setState(obj);
+  };
+
+  return (
+    <Select
+      placeholder="Estado"
+      defaultValue={[options[0]]}
+      options={options}
+      onChange={handleStateChange}
+      getOptionLabel={x => x.label}
+      getOptionValue={x => x.value}
+    />
+  )
+}
 
 export default States

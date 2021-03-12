@@ -41,16 +41,16 @@
 
 /* USAR APENAS PARA DEMOSTRAÇÂO */
 .title {
-  background: #c96c15;
+  background: #a70101cc;
   padding: 5px;
   text-align: center;
   margin: 2px 0;
   color: #fff;
 }
 .line {
-  background: #f7d2ae;
+  background: #eecaca;
   padding: 5px;
   text-align: center;
   margin: 2px 0;
-  color: #fff;
+  color: black;
 }

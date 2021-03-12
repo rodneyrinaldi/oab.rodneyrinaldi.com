@@ -58,7 +58,7 @@ export const Home: FunctionComponent = ({ children }) => {
       </div>
 
       <div className={styles.tier}>
-        <div className={styles.honoraries}>
+        <div className={styles.procedures}>
           <Procedures />
         </div>
       </div>
