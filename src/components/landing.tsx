@@ -1,12 +1,18 @@
 import { FunctionComponent } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
+import Cookies from "js-cookie";
 
 import Version from './version'
 
 import styles from './landing.module.css'
 
 export const Landing: FunctionComponent = ({ children }) => {
+  function handleData() {
+    localStorage.setItem('@test-app/userid', 'localStorage')
+    Cookies.set('@test-app/userid', 'Cookies')
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.tier}>
@@ -52,7 +58,7 @@ export const Landing: FunctionComponent = ({ children }) => {
       <div className={styles.tier}>
         <div className={styles.button}>
           <Link href="/home">
-            <a>
+            <a onClick={handleData}>
               ENTRAR
             </a>
           </Link>

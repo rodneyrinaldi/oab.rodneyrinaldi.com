@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
-import Link from 'next/link'
+import { FunctionComponent, useState, useEffect } from "react";
 import Image from 'next/image'
+import Cookies from "js-cookie";
 
 import styles from './home.module.css'
 
@@ -11,6 +11,16 @@ import Procedures from '../utils/procedures'
 import Version from './version'
 
 export const Home: FunctionComponent = ({ children }) => {
+  const [ls, setLs] = useState('')
+  const [co, setCo] = useState('')
+
+  useEffect(() => {
+    setLs(localStorage.getItem('@test-app/userid') || '')
+    setCo(Cookies.get('@test-app/userid') || '')
+  }, [])
+
+  // const ls = localStorage.getItem('@test-app/userid') || ''
+  // const co = Cookies.get('@test-app/userid') || ''
 
   return (
     <div className={styles.container}>
@@ -65,6 +75,9 @@ export const Home: FunctionComponent = ({ children }) => {
       </div>
 
       <div className={styles.tier}>
+        <div className={styles.oabtext}>
+          <h1>{ls}{' '}{co}</h1>
+        </div>
         <Version />
       </div>
 
