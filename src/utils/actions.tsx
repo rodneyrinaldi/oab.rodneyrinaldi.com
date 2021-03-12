@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
-import records from '../data/area.json'
+import records from '../data/action.json'
 
 const options = records.map(d => ({
-  "value": d.AREA,
-  "label": d.AREA
+  "value": d.ACTION,
+  "label": d.ACTION
 
 }))
 
-const Area = () => (
+const Action = () => (
   <Select
     options={options}
     defaultValue={[options[0]]}
   />
 )
 
-export default Area
+export default Action

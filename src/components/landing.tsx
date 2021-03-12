@@ -51,21 +51,7 @@ export const Landing: FunctionComponent = ({ children }) => {
         <div className={styles.button}>
           <Link href="/home">
             <a>
-              CÍVIL
-            </a>
-          </Link>
-        </div>
-        <div className={styles.button}>
-          <Link href="/home">
-            <a>
-              PENAL
-            </a>
-          </Link>
-        </div>
-        <div className={styles.button}>
-          <Link href="/home">
-            <a>
-              OUTROS
+              ENTRAR
             </a>
           </Link>
         </div>

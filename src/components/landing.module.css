@@ -28,9 +28,9 @@
 
 .button {
   cursor:pointer;
-  width: 26%;
+  width: 60%;
   height: 3rem;
-  max-width: 180px;
+  max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +76,6 @@
 }
 
 .logo {
-  width: 240px;
-  margin: 6vh 0 6vh;
+  width: 140px;
+  margin: 6vh 0 12vh;
 }
